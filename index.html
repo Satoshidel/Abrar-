@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABRAR MALIK - Official Telegram Channel</title>
+    
+    <!-- ULTRA-LIGHT & INSTANT LOGO PRELOAD -->
+    <link rel="preconnect" href="https://wsrv.nl" crossorigin>
+    <link rel="preload" as="image" href="https://wsrv.nl/?url=https://files.catbox.moe/1t9f0b.jpg&w=240&h=240&fit=cover&output=webp&q=80" fetchpriority="high">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- ================= META PIXEL CODE START ================= -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '2107367206808129'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" 
+        src="https://www.facebook.com/tr?id=2107367206808129&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- ================= META PIXEL CODE END ================= -->
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #020704;
+            background-image: 
+                radial-gradient(circle at 50% 20%, rgba(16, 185, 129, 0.25) 0%, rgba(5, 50, 30, 0.1) 45%, transparent 70%),
+                linear-gradient(rgba(16, 185, 129, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(16, 185, 129, 0.04) 1px, transparent 1px);
+            background-size: 100% 100%, 28px 28px, 28px 28px;
+            min-height: 100vh;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Floating Green Dust Particles */
+        .spark {
+            position: fixed;
+            bottom: -15px;
+            width: 3px;
+            height: 3px;
+            background: #10b981;
+            box-shadow: 0 0 8px #10b981, 0 0 15px #059669;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            animation: floatUp linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0) scale(1); opacity: 0.8; }
+            100% { transform: translateY(-105vh) scale(0.3); opacity: 0; }
+        }
+
+        /* Perfect Balanced Logo Ring */
+        .logo-ring {
+            position: relative;
+            border: 3.5px solid #10b981;
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.75), 0 0 50px rgba(16, 185, 129, 0.3);
+            animation: pulseGlow 2s infinite alternate;
+            z-index: 1;
+        }
+
+        @keyframes pulseGlow {
+            0% { box-shadow: 0 0 18px rgba(16, 185, 129, 0.5); }
+            100% { box-shadow: 0 0 32px rgba(16, 185, 129, 0.95); }
+        }
+
+        /* Bold & Big Neon Title */
+        .neon-title {
+            text-shadow: 0 0 15px rgba(16, 185, 129, 0.7), 0 0 30px rgba(16, 185, 129, 0.4);
+        }
+
+        /* Dark Emerald Glass Cards */
+        .dark-card {
+            background: rgba(3, 20, 12, 0.88);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            backdrop-filter: blur(10px);
+            z-index: 1;
+        }
+
+        /* Highlighted Center Card */
+        .neon-card-active {
+            border-color: rgba(16, 185, 129, 0.6);
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+        }
+
+        /* Left Green Neon Accent Card */
+        .feature-box {
+            background: rgba(3, 20, 12, 0.92);
+            border: 1px solid rgba(16, 185, 129, 0.28);
+            border-left: 4px solid #10b981;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        /* Electric Green Main Button */
+        .neon-btn {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(90deg, #047857 0%, #10b981 50%, #047857 100%);
+            border: 1px solid rgba(110, 231, 183, 0.5);
+            box-shadow: 0 0 30px rgba(16, 185, 129, 0.8), 0 0 60px rgba(16, 185, 129, 0.4);
+            animation: btnPulse 1.6s infinite ease-in-out;
+            z-index: 1;
+        }
+
+        .neon-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+            transform: skewX(-25deg);
+            animation: shineSweep 2.8s infinite;
+        }
+
+        @keyframes shineSweep {
+            0% { left: -100%; }
+            60%, 100% { left: 160%; }
+        }
+
+        @keyframes btnPulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 25px rgba(16, 185, 129, 0.7); }
+            50% { transform: scale(1.035); box-shadow: 0 0 42px rgba(16, 185, 129, 0.95); }
+        }
+
+        /* Progress Bar */
+        .progress-bar-fill {
+            background: linear-gradient(90deg, #10b981 0%, #34d399 50%, #10b981 100%);
+            box-shadow: 0 0 12px rgba(16, 185, 129, 0.8);
+            transition: width 1s linear;
+        }
+    </style>
+</head>
+<body class="flex flex-col justify-between items-center p-4 min-h-screen select-none relative">
+
+    <!-- Floating Background Sparks -->
+    <span class="spark" style="left: 10%; animation-duration: 7s; animation-delay: 0s;"></span>
+    <span class="spark" style="left: 30%; animation-duration: 9s; animation-delay: 2s;"></span>
+    <span class="spark" style="left: 55%; animation-duration: 6s; animation-delay: 1s;"></span>
+    <span class="spark" style="left: 75%; animation-duration: 8s; animation-delay: 3s;"></span>
+    <span class="spark" style="left: 90%; animation-duration: 6.5s; animation-delay: 1.5s;"></span>
+
+    <!-- 1. TOP STATUS PILL BAR -->
+    <div class="w-full max-w-md dark-card rounded-full px-4 py-2.5 flex items-center justify-between text-[11px] font-bold tracking-wider uppercase shadow-lg">
+        <div class="flex items-center gap-2 text-emerald-400">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#10b981] animate-ping"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-[#10b981] -ml-4"></span>
+            <span>OFFICIAL CHANNEL</span>
+        </div>
+        <div class="flex items-center gap-1.5 text-yellow-400">
+            <i class="fa-solid fa-bolt"></i>
+            <span>LIMITED FREE ENTRY</span>
+        </div>
+    </div>
+
+    <!-- 2. CENTER MAIN CONTENT -->
+    <div class="w-full max-w-md flex flex-col items-center text-center my-auto py-3">
+
+        <!-- Large & Prominent Channel Title on Top -->
+        <h1 class="text-3xl sm:text-4xl font-black tracking-wider text-white uppercase neon-title mb-3">
+            ABRAR MALIK
+        </h1>
+
+        <!-- Perfect Balanced Profile Logo (w-28 h-28 / 112px) -->
+        <div class="relative mb-3">
+            <div class="p-1 rounded-full logo-ring bg-[#021008]">
+                <img src="https://wsrv.nl/?url=https://files.catbox.moe/1t9f0b.jpg&w=240&h=240&fit=cover&output=webp&q=80" 
+                     onerror="this.src='https://files.catbox.moe/1t9f0b.jpg'"
+                     alt="Abrar Malik" 
+                     width="112" height="112"
+                     fetchpriority="high"
+                     decoding="sync"
+                     class="w-28 h-28 rounded-full object-cover">
+            </div>
+            <!-- Blue Verified Tick -->
+            <div class="absolute bottom-1 right-1 bg-blue-500 text-white rounded-full w-7 h-7 flex items-center justify-center border-2 border-[#020704] shadow-md z-20">
+                <i class="fa-solid fa-check text-xs"></i>
+            </div>
+        </div>
+
+        <!-- Subscribers & Accuracy Line -->
+        <div class="flex items-center justify-center gap-2 text-xs sm:text-sm font-semibold text-gray-300">
+            <span class="flex items-center gap-1.5">
+                <i class="fa-solid fa-users text-[#10b981]"></i>
+                52.5K+ Subscribers
+            </span>
+            <span class="text-gray-500">•</span>
+            <span class="text-[#34d399] font-bold">99% Accuracy</span>
+        </div>
+
+        <!-- 3-Column Mini Stats Cards -->
+        <div class="grid grid-cols-3 gap-2.5 w-full mt-4">
+            <!-- Box 1 -->
+            <div class="dark-card rounded-2xl py-3 px-2 flex flex-col items-center justify-center">
+                <i class="fa-solid fa-trophy text-yellow-400 text-lg mb-1"></i>
+                <span class="text-[11px] font-extrabold text-white tracking-wide">BACK-2-BACK</span>
+                <span class="text-[10px] text-gray-400">Match Pass</span>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="dark-card neon-card-active rounded-2xl py-3 px-2 flex flex-col items-center justify-center">
+                <i class="fa-solid fa-fire text-[#10b981] text-lg mb-1"></i>
+                <span class="text-[11px] font-extrabold text-white tracking-wide">100% FREE</span>
+                <span class="text-[10px] text-gray-400">VIP Entry</span>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="dark-card rounded-2xl py-3 px-2 flex flex-col items-center justify-center">
+                <i class="fa-solid fa-shield-halved text-green-400 text-lg mb-1"></i>
+                <span class="text-[11px] font-extrabold text-white tracking-wide">TRUSTED</span>
+                <span class="text-[10px] text-gray-400">No.1 Brand</span>
+            </div>
+        </div>
+
+        <!-- 3 Bullet Points Card -->
+        <div class="feature-box w-full rounded-2xl p-4 mt-3.5 text-left space-y-3">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-[#10b981] text-sm"></i>
+                <span class="text-xs sm:text-sm font-medium text-gray-100">Toss + Match + Session Sabse Pehle</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-[#10b981] text-sm"></i>
+                <span class="text-xs sm:text-sm font-medium text-gray-100">All T20, League & International Matches</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-check text-[#10b981] text-sm"></i>
+                <span class="text-xs sm:text-sm font-medium text-gray-100">Abhi Join Karo Aur Live Proof Dekho!</span>
+            </div>
+        </div>
+
+        <!-- SINGLE GREEN NEON JOIN BUTTON -->
+        <a href="https://t.me/+Lvfer51jLsE5NjBl" onclick="trackSubscribe()" 
+           class="neon-btn w-full py-4 px-6 rounded-2xl font-black text-base text-white flex items-center justify-center gap-3 mt-4 uppercase tracking-wider active:scale-95 transition-transform">
+            <span class="bg-white text-[#047857] rounded-full w-6 h-6 flex items-center justify-center shrink-0 shadow">
+                <i class="fa-solid fa-paper-plane text-xs -ml-0.5"></i>
+            </span>
+            <span>JOIN ABRAR MALIK TELEGRAM</span>
+        </a>
+
+        <!-- Small Sub-text Below Button -->
+        <p class="text-[11px] text-emerald-400 font-medium mt-2.5 flex items-center justify-center gap-1.5">
+            <i class="fa-solid fa-arrow-pointer text-[10px]"></i>
+            <span>Tap above to join channel securely</span>
+        </p>
+
+    </div>
+
+    <!-- 3. BOTTOM TIMER & PROGRESS BAR CARD -->
+    <div class="w-full max-w-md dark-card rounded-2xl p-4 shadow-xl">
+        <!-- Timer Row -->
+        <div class="flex items-center justify-between text-xs sm:text-sm mb-2">
+            <span class="text-gray-300 flex items-center gap-1.5 font-medium">
+                <i class="fa-regular fa-clock text-[#10b981]"></i>
+                Free Invite Closing In:
+            </span>
+            <span id="timer" class="text-[#10b981] font-extrabold text-sm tracking-wide">00:25s</span>
+        </div>
+
+        <!-- Animated Progress Bar -->
+        <div class="w-full h-2 bg-gray-800 rounded-full overflow-hidden mb-2">
+            <div id="progressBar" class="h-full progress-bar-fill rounded-full" style="width: 83%;"></div>
+        </div>
+
+        <!-- Spots Left Row -->
+        <div class="flex items-center justify-between text-xs font-semibold">
+            <span class="text-emerald-400 flex items-center gap-1">
+                <i class="fa-solid fa-bolt text-yellow-400"></i> Fast Joining Active
+            </span>
+            <span class="text-yellow-400 font-bold">Only 13 Free Spots Left!</span>
+        </div>
+
+        <!-- Disclaimer -->
+        <p class="text-[10px] text-gray-500 text-center mt-2 pt-1.5 border-t border-emerald-950/60">
+            Disclaimer: This channel is strictly for entertainment & sports analysis purposes only.
+        </p>
+    </div>
+
+    <!-- Countdown & Pixel Script -->
+    <script>
+        function trackSubscribe() {
+            if (navigator.vibrate) {
+                navigator.vibrate(35);
+            }
+            if (typeof fbq === 'function') {
+                fbq('track', 'Subscribe');
+            }
+        }
+
+        const totalTime = 25;
+        let timeLeft = 25;
+        const timerEl = document.getElementById('timer');
+        const progressEl = document.getElementById('progressBar');
+
+        setInterval(() => {
+            timeLeft = timeLeft <= 1 ? totalTime : timeLeft - 1;
+            timerEl.textContent = "00:" + (timeLeft < 10 ? "0" + timeLeft : timeLeft) + "s";
+            
+            const percentage = Math.max(12, Math.round((timeLeft / totalTime) * 100));
+            progressEl.style.width = percentage + "%";
+        }, 1000);
+    </script>
+
+</body>
+</html>
